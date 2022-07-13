@@ -1,29 +1,32 @@
 /* Light / Dark theme colors */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap');
 
-body[data-theme='light_theme'] {
+:root [data-theme='light_theme'] {
   --white: #fff;
-  --bg-color: #F8F8F8;
-  --color: #333;
+  --bg-color: #f8f8f8;
+  --color: #222;
   --secondary-color: #ff7f57;
   --icon-bg-color: #333;   
-  --icon-color: #333;
+  --icon-color: #f8f8f8;
 }
 
-body[data-theme='dark_theme'] {
+:root [data-theme='dark_theme'] {
   --white: #fff;
-  --bg-color: #000;
+  --bg-color: #222;
   --color: #fff;
   --secondary-color: #ff7f57;
   --icon-bg-color: #333;   
-  --icon-color: #fff;
+  --icon-color: #f8f8f8;
 }
 
 body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
   background: var(--bg-color);
   color: var(--color);
   text-align: center;
 }
-
 
 @keyframes fadeIn {
   from {top: 20%; opacity: 0;}
@@ -41,8 +44,8 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
-  animation: fadeIn 1000ms ease;
-  -webkit-animation: fadeIn 1000ms ease;
+  animation: fadeIn 1s ease;
+  -webkit-animation: fadeIn 1s ease;
 }
 
 h1 {
@@ -50,7 +53,7 @@ h1 {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 0;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .dot {
@@ -60,7 +63,7 @@ h1 {
 p {
   text-align: center;
   margin: 18px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: normal;
 }
 
@@ -77,15 +80,13 @@ p {
   margin: 0 10px;
   border-radius: 50px;
   border: 2px solid transparent;
-  transition: all 200ms ease;
+  transition: all 0.2s ease;
   text-decoration: none;
   position: relative;
 }
 
 .icons i:hover, .icons i:active {
   color: var(--icon-color);
-  background: none;
-  border-color: var(--icon-bg-color);
   cursor: pointer !important;
   transform: scale(1.2);
   -webkit-transform: scale(1.2);

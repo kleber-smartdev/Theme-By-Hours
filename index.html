@@ -6,17 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/447e7d4239.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
-  <title>Theme  Project</title>
+  <title>Theme Project in JS</title>
 </head>
 <body data-theme="light_theme">
     <div class="wrapper">
-      <h1>Coming soon<span class="dot">.</span></h1>
-      <p>We are building our website.</p>
+      <h1>Theme Color in JS<span class="dot">.</span></h1>
+      <p>Based in hours and by button click.</p>
       <div class="icons">
-        <a href=""><i class="fa fa-twitter"></i></a>
-        <a href=""><i class="fa fa-youtube-play"></i></a>
-        <a href=""><i class="fa fa-paper-plane"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-youtube-play"></i></a>
+        <a href="#"><i class="fa fa-paper-plane"></i></a>
       </div>
+      <br>
+      <br>
+      <button onclick="document.body.setAttribute('data-theme', 'dark_theme')">Dark Theme</button>
+      <button onclick="document.body.setAttribute('data-theme', 'light_theme')">Light Theme</button>
     </div>
  <script src="index.js"></script>
 </body>

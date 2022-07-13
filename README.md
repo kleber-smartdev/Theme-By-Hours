@@ -6,4 +6,4 @@ Contribute, Fork it, Share it!
 <br>
 https://kleberux.com/
 <br>
-😉🚀  
+😉🚀

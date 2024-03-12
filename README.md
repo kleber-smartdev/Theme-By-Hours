@@ -5,6 +5,4 @@ This study project is about setting the theme light or dark in your application 
 - [Live Demo](https://kleber-smartdev.github.io/Theme-By-Hours/)
 
 ### Contribute, Fork it, Share it!
-https://kleberux.com/
-<br>
 😉🚀
